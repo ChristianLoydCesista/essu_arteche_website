@@ -2,246 +2,448 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Student Profile | ESSU-AEC</title>
+
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
     <!-- ============================================================ -->
-    <!-- HEADER                                                        -->
+    <!-- HEADER                                                       -->
     <!-- ============================================================ -->
 
     <header class="page-header">
-      <h1>Student Profile</h1>
-      <p>
-        This page contains the profile information of a student enrolled at
-        <strong
-          >Eastern Samar State University – Arteche Extension Campus</strong
-        >.
-      </p>
+      <div class="header-content">
+        <span class="header-label">
+          Eastern Samar State University – Arteche Extension Campus
+        </span>
+
+        <h1>Student Profile</h1>
+
+        <p>
+          This page contains the academic and personal information of a student
+          enrolled at ESSU – Arteche Extension Campus.
+        </p>
+      </div>
     </header>
 
     <!-- ============================================================ -->
-    <!-- NAVIGATION                                                    -->
+    <!-- NAVIGATION                                                   -->
     <!-- ============================================================ -->
 
-    <nav>
-      <p>
-        <a href="index.html">Home</a><br />
-        <a href="about.html">About</a><br />
-        <a href="academics.html">Academics</a><br />
-        <a href="contact.html">Contact</a><br />
-        <a href="https://www.google.com" target="_blank">Visit Google</a>
-      </p>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-container">
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="academics.html">Academics</a>
+
+        <a href="profile.html" class="active" aria-current="page"> Profile </a>
+
+        <a href="contact.html">Contact</a>
+
+        <a
+          href="https://www.google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit Google
+        </a>
+      </div>
     </nav>
 
     <!-- ============================================================ -->
-    <!-- MAIN BODY (top, left, right)                                  -->
+    <!-- MAIN CONTENT                                                 -->
     <!-- ============================================================ -->
 
     <main class="main-body">
-      <!-- -------- TOP SECTION -------- -->
+      <!-- ========================================================== -->
+      <!-- PROFILE OVERVIEW                                           -->
+      <!-- ========================================================== -->
 
       <section class="body-top">
         <div class="profile-photo">
           <h2>Profile Picture</h2>
+
           <img
             src="./assets/images/default.png"
-            alt="Student Picture"
+            alt="Profile picture of Christian Loyd G. Cesista"
             width="200"
             height="200"
           />
         </div>
 
         <div class="personal-info">
-          <h2>Personal Information</h2>
-          <p><strong>Full Name:</strong> Pedro San Juan</p>
-          <p><strong>Student Number:</strong> 2024-0001</p>
-          <p>
-            <strong>Program:</strong> Bachelor of Science in Information
-            Technology
-          </p>
-          <p><strong>Year Level:</strong> Second Year</p>
-          <p><strong>Email:</strong> juandelacruz@email.com</p>
-          <p><strong>Address:</strong> Cebu City, Philippines</p>
+          <div class="profile-heading">
+            <span class="student-status">Fourth Year Student</span>
+
+            <h2>Christian Loyd G. Cesista</h2>
+
+            <p class="student-program">
+              Bachelor of Science in Information Technology
+            </p>
+          </div>
+
+          <div class="profile-details">
+            <p>
+              <strong>Full Name:</strong>
+              <span>Cesista, Christian Loyd G.</span>
+            </p>
+
+            <p>
+              <strong>Student Number:</strong>
+              <span>23-04732</span>
+            </p>
+
+            <p>
+              <strong>Program:</strong>
+              <span>Bachelor of Science in Information Technology</span>
+            </p>
+
+            <p>
+              <strong>Year Level:</strong>
+              <span>Fourth Year</span>
+            </p>
+
+            <p>
+              <strong>Email:</strong>
+              <span>christiangcesista@email.com</span>
+            </p>
+
+            <p>
+              <strong>Address:</strong>
+              <span> Brgy. Beri, Arteche, Eastern Samar, Philippines </span>
+            </p>
+          </div>
         </div>
       </section>
 
-      <!-- -------- MIDDLE SECTION (LEFT + RIGHT) -------- -->
+      <!-- ========================================================== -->
+      <!-- PROFILE DETAILS AND CURRENT SUBJECTS                       -->
+      <!-- ========================================================== -->
 
       <div class="body-middle">
-        <!-- --- LEFT COLUMN --- -->
+        <!-- -------------------------------------------------------- -->
+        <!-- LEFT COLUMN                                              -->
+        <!-- -------------------------------------------------------- -->
 
         <section class="body-left">
           <!-- Biography -->
-          <section>
+
+          <section class="profile-section biography-section">
             <h2>Biography</h2>
+
             <p>
-              Juan Dela Cruz is currently taking Bachelor of Science in
-              Information Technology. He enjoys learning web development,
-              programming, database management, and networking.
+              Christian Loyd G. Cesista is currently taking a Bachelor of
+              Science in Information Technology. He enjoys learning web
+              development, programming, database management, and networking.
             </p>
           </section>
 
           <!-- Skills -->
-          <section>
+
+          <section class="profile-section skills-section">
             <h2>Skills</h2>
-            <ul>
+
+            <ul class="skills-list">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
+              <li>PHP</li>
               <li>Microsoft Office</li>
               <li>Problem Solving</li>
+              <li>Communication</li>
             </ul>
           </section>
 
           <!-- Educational Background -->
-          <section>
+
+          <section class="profile-section education-section">
             <h2>Educational Background</h2>
-            <ol>
-              <li>Elementary</li>
-              <li>Junior High School</li>
-              <li>Senior High School</li>
-              <li>College</li>
+
+            <ol class="education-list">
+              <li>
+                <strong>Elementary</strong>
+                <span>Elementary Education</span>
+              </li>
+
+              <li>
+                <strong>Junior High School</strong>
+                <span>Secondary Education</span>
+              </li>
+
+              <li>
+                <strong>Senior High School</strong>
+                <span>Senior Secondary Education</span>
+              </li>
+
+              <li>
+                <strong>College</strong>
+                <span>
+                  Eastern Samar State University – Arteche Extension Campus
+                </span>
+              </li>
             </ol>
           </section>
         </section>
 
-        <!-- --- RIGHT COLUMN --- -->
+        <!-- -------------------------------------------------------- -->
+        <!-- RIGHT COLUMN                                             -->
+        <!-- -------------------------------------------------------- -->
 
         <section class="body-right">
-          <!-- Current Subjects (table) -->
           <section class="subjects-table">
-            <h2>Current Subjects</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>Course Code</th>
-                  <th>Description</th>
-                  <th>Instructor</th>
-                  <th>Schedule</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>IT413 / Elective 3*</td>
-                  <td>Web Systems and Technologies</td>
-                  <td>Mr. Silla</td>
-                  <td>MW 7:30 AM</td>
-                </tr>
-                <tr>
-                  <td>Comp 212</td>
-                  <td>Object Oriented Programming</td>
-                  <td>Mr. Silla</td>
-                  <td>TTH 10:00 AM</td>
-                </tr>
-                <tr>
-                  <td>IT 314 / Elective 1*</td>
-                  <td>Advanced Database Systems</td>
-                  <td>Mr. Silla</td>
-                  <td>MWF 2:00 PM</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="section-heading">
+              <h2>Current Subjects</h2>
+
+              <p>Enrolled subjects for the current academic term.</p>
+            </div>
+
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Code</th>
+                    <th scope="col">Subject Code</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Units</th>
+                    <th scope="col">Instructor</th>
+                    <th scope="col">Schedule / Room</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td><strong>F228</strong></td>
+                    <td><strong>IT-411</strong></td>
+                    <td>Capstone Project and Research 2</td>
+                    <td>2.0</td>
+                    <td>E. Borata</td>
+                    <td>7:30–8:30 AM, TTh, RM16</td>
+                  </tr>
+
+                  <tr>
+                    <td><strong>F227</strong></td>
+                    <td><strong>IT-411</strong></td>
+                    <td>Capstone Project and Research 2</td>
+                    <td>1.0</td>
+                    <td>E. Borata</td>
+                    <td>8:30–10:30 AM, TTh, RM16</td>
+                  </tr>
+
+                  <tr>
+                    <td><strong>F224</strong></td>
+                    <td><strong>IT-413</strong></td>
+                    <td>IT Elective 3</td>
+                    <td>1.0</td>
+                    <td>A. Morallos</td>
+                    <td>11:30 AM–12:30 PM, TTh, RM16</td>
+                  </tr>
+
+                  <tr>
+                    <td><strong>F226</strong></td>
+                    <td><strong>IT-413</strong></td>
+                    <td>IT Elective 3</td>
+                    <td>2.0</td>
+                    <td>A. Morallos</td>
+                    <td>10:00–11:00 AM, TTh, RM16</td>
+                  </tr>
+
+                  <tr>
+                    <td><strong>F230</strong></td>
+                    <td><strong>IT-414</strong></td>
+                    <td>IT Elective 4: Data Visualization</td>
+                    <td>2.0</td>
+                    <td>F. Amoyan</td>
+                    <td>7:30–8:30 AM, MW, RM16</td>
+                  </tr>
+
+                  <tr>
+                    <td><strong>F225</strong></td>
+                    <td><strong>IT-414</strong></td>
+                    <td>IT Elective 4: Data Visualization</td>
+                    <td>1.0</td>
+                    <td>F. Amoyan</td>
+                    <td>8:30–10:00 AM, MW, RM16</td>
+                  </tr>
+
+                  <tr>
+                    <td><strong>F229</strong></td>
+                    <td><strong>IT-412</strong></td>
+                    <td>Special Topics in Information Technology</td>
+                    <td>3.0</td>
+                    <td>E. Borata</td>
+                    <td>3:30–5:00 PM, MW, RM16</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
         </section>
       </div>
 
+      <!-- ========================================================== -->
+      <!-- CONTACT FORM                                               -->
+      <!-- ========================================================== -->
+
       <div class="body-middle">
-        <!-- Contact Form -->
         <section class="contact-form">
-          <h2>Contact the Student</h2>
-          <form>
+          <div class="section-heading">
+            <h2>Contact the Student</h2>
+
+            <p>Use the form below to send a message to the student.</p>
+          </div>
+
+          <form action="#" method="post">
             <div class="form-group">
-              <label for="fullname">Full Name:</label>
-              <input type="text" id="fullname" name="fullname" />
+              <label for="fullname">Full Name</label>
+
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                autocomplete="name"
+              />
             </div>
 
             <div class="form-group">
-              <label for="email">Email Address:</label>
-              <input type="email" id="email" name="email" />
+              <label for="email">Email Address</label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+              />
             </div>
 
             <div class="form-group">
-              <label for="course">Course:</label>
+              <label for="course">Course</label>
+
               <select id="course" name="course">
-                <option>BSIT</option>
-                <option>BSEd</option>
-                <option>BEEd</option>
-                <option>BSHM</option>
+                <option value="">Select a course</option>
+                <option value="BSIT">BSIT</option>
+                <option value="BSED">BSEd</option>
+                <option value="BEED">BEEd</option>
+                <option value="BSHM">BSHM</option>
               </select>
             </div>
 
-            <div class="form-group">
-              <label>Gender</label>
-              <div class="radio-group">
-                <label
-                  ><input type="radio" name="gender" value="male" /> Male</label
-                >
-                <label
-                  ><input type="radio" name="gender" value="female" />
-                  Female</label
-                >
-              </div>
-            </div>
+            <fieldset class="form-group">
+              <legend>Gender</legend>
 
-            <div class="form-group">
-              <label>Interests</label>
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="gender" value="male" />
+                  Male
+                </label>
+
+                <label>
+                  <input type="radio" name="gender" value="female" />
+                  Female
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group form-group-full">
+              <legend>Interests</legend>
+
               <div class="checkbox-group">
-                <label
-                  ><input
+                <label>
+                  <input
                     type="checkbox"
-                    name="interests"
+                    name="interests[]"
                     value="programming"
                   />
-                  Programming</label
-                >
-                <label
-                  ><input type="checkbox" name="interests" value="networking" />
-                  Networking</label
-                >
-                <label
-                  ><input type="checkbox" name="interests" value="multimedia" />
-                  Multimedia</label
-                >
-              </div>
-            </div>
+                  Programming
+                </label>
 
-            <div class="form-group">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="interests[]"
+                    value="networking"
+                  />
+                  Networking
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="interests[]"
+                    value="multimedia"
+                  />
+                  Multimedia
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-group form-group-full">
               <label for="message">Message</label>
+
               <textarea id="message" name="message" rows="5"></textarea>
             </div>
 
-            <div class="form-actions">
-              <input type="submit" value="Submit" />
-              <input type="reset" value="Clear" />
+            <div class="form-actions form-group-full">
+              <button type="submit" class="button button-primary">
+                Submit
+              </button>
+
+              <button type="reset" class="button button-secondary">
+                Clear
+              </button>
             </div>
           </form>
         </section>
       </div>
 
-      <div class="body-middle" style="border: 1px solid black">
-        <!-- School Location (iframe) -->
+      <!-- ========================================================== -->
+      <!-- SCHOOL LOCATION                                            -->
+      <!-- ========================================================== -->
+
+      <div class="body-middle">
         <section class="location-iframe">
-          <h2>School Location</h2>
-          <iframe
-            src="https://www.google.com"
-            width="600"
-            height="300"
-            title="School Location Map"
-          >
-          </iframe>
+          <div class="section-heading">
+            <h2>School Location</h2>
+
+            <p>
+              Eastern Samar State University – Arteche Extension Campus,
+              Arteche, Eastern Samar.
+            </p>
+          </div>
+
+          <div class="map-container">
+            <iframe
+              src="https://maps.app.goo.gl/bzUn7oqrXdWEDdZC7"
+              title="Location of Eastern Samar State University Arteche Extension Campus"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
         </section>
       </div>
     </main>
 
     <!-- ============================================================ -->
-    <!-- FOOTER                                                        -->
+    <!-- FOOTER                                                       -->
     <!-- ============================================================ -->
 
     <footer class="page-footer">
-      <p>&copy; 2026 <span>ESSU – Arteche</span></p>
+      <div class="footer-content">
+        <p>
+          &copy; 2026
+          <span>
+            Eastern Samar State University – Arteche Extension Campus
+          </span>
+        </p>
+
+        <small>Cesista Christian Loyd G</small>
+      </div>
     </footer>
   </body>
 </html>
