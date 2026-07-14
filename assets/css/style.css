@@ -3,41 +3,41 @@
 /* ========================================================= */
 
 :root {
-  /* Brand colors */
-  --color-primary: #0b2a4a;
-  --color-primary-light: #1a4a6e;
-  --color-primary-dark: #071d33;
+  /* Brand colors from index.html */
+  --color-primary: #144f16;
+  --color-primary-light: #0ca237;
+  --color-primary-dark: #083a0f;
 
-  --color-accent: #e8b931;
-  --color-accent-light: #f7df78;
-  --color-accent-dark: #c79815;
+  --color-accent: #ffc107;
+  --color-accent-light: #ffd54f;
+  --color-accent-dark: #d9a300;
 
   /* Supporting colors */
-  --color-success: #2f7d4a;
+  --color-success: #0ca237;
   --color-danger: #b13e3e;
 
   /* Neutral colors */
-  --color-background: #f3f6f9;
+  --color-background: #f5f5f5;
   --color-surface: #ffffff;
-  --color-surface-soft: #f8fafc;
+  --color-surface-soft: #f8faf8;
 
-  --color-text-primary: #17212b;
-  --color-text-secondary: #607080;
-  --color-text-muted: #7c8996;
+  --color-text-primary: #333333;
+  --color-text-secondary: #5f665f;
+  --color-text-muted: #747c74;
   --color-text-light: #ffffff;
 
-  --color-border: #dce3ea;
-  --color-border-light: #e8edf2;
+  --color-border: #dde4dd;
+  --color-border-light: #e9eee9;
 
-  /* Shadows */
-  --shadow-small: 0 3px 10px rgba(11, 42, 74, 0.06);
-  --shadow-card: 0 10px 30px rgba(11, 42, 74, 0.08);
-  --shadow-hover: 0 14px 36px rgba(11, 42, 74, 0.12);
+  /* Shadows matching index cards */
+  --shadow-small: 0 2px 15px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0 5px 15px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.1);
 
   /* Border radius */
   --radius-small: 6px;
   --radius-medium: 10px;
-  --radius-large: 16px;
+  --radius-large: 10px;
   --radius-round: 999px;
 
   /* Spacing */
@@ -49,14 +49,15 @@
   --space-2xl: 3rem;
 
   /* Layout */
-  --container-width: 1300px;
+  --container-width: 1200px;
 
   /* Typography */
-  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  --font-heading: "Montserrat", sans-serif;
 
   /* Transitions */
-  --transition-fast: 0.18s ease;
-  --transition-normal: 0.25s ease;
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
 }
 
 /* ========================================================= */
@@ -432,21 +433,15 @@ small {
   position: relative;
   overflow: hidden;
 
-  padding-block: clamp(2.5rem, 6vw, 4.5rem);
+  padding-block: clamp(2.8rem, 6vw, 4.5rem);
 
-  background:
-    radial-gradient(
-      circle at top right,
-      rgba(232, 185, 49, 0.18),
-      transparent 32%
-    ),
-    linear-gradient(
-      135deg,
-      var(--color-primary-dark),
-      var(--color-primary-light)
-    );
+  background: linear-gradient(
+    135deg,
+    rgba(20, 79, 22, 0.96),
+    rgba(12, 162, 55, 0.9)
+  );
 
-  color: var(--color-text-light);
+  color: #ffffff;
   border-bottom: 4px solid var(--color-accent);
 }
 
