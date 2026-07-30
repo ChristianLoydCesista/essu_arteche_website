@@ -109,8 +109,12 @@ function ResetForm() {
   emailInputField.value = "";
   courseSelectionBox.value = "";
   genderCheckBox.querySelector('input[name="gender"]:checked').checked = false;
-  interestCheckBox.querySelector('input[type="checkbox"]:checked').checked =
-    false;
+  // Uncheck all checkboxes with a specific class
+  interestCheckBox
+    .querySelectorAll('input[name="interest"]:checked')
+    .forEach((checkbox) => {
+      checkbox.checked = false;
+    });
   messageInput.value = "";
   alertPlaceholder.innerText = "";
 }
